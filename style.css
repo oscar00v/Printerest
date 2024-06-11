@@ -24,12 +24,14 @@ header nav {
     z-index: 1; /*acomoda los elementos en un sierto orden */
     
 }
+/*Logo printerest*/
 header nav img#pinterest-icon {
     width: 35px;
     height: 32px;
     padding: 4px;
 }
-header nav img#pinterest-icon:hover { /*Hace mas obscuro el logo al pazar el maus*/
+
+header nav img#pinterest-icon:hover { /*Hace mas obscuro el logo al pazar el mouse*/
     background-color: #d4d4d4;
     border-radius: 150px;
 }
@@ -54,11 +56,11 @@ header nav img#pinterest-icon:hover { /*Hace mas obscuro el logo al pazar el mau
     padding: 15px 13px 15px;/*Top,right-left, bottom*/
 }
 
-/**/
+/*boton crear*/
 .crear{
     display: flex;
 }
-
+/*boton search*/
 .search {
     flex-grow: 1;
     height: 45px;
@@ -66,7 +68,7 @@ header nav img#pinterest-icon:hover { /*Hace mas obscuro el logo al pazar el mau
     border-radius: 35px;
 
 }
-
+/*osbcurece la barra de busqueda */
 .search:hover {
     background-color: #E1E1E1;
 }
@@ -75,7 +77,7 @@ header nav img#pinterest-icon:hover { /*Hace mas obscuro el logo al pazar el mau
     border: 4px solid #7FC1FF;
 }
 */
-
+/*centra la barra*/
 .barra{
     display: flex;
     align-items: center;
@@ -136,18 +138,20 @@ header nav img#pinterest-icon:hover { /*Hace mas obscuro el logo al pazar el mau
     position: relative;
     padding: 6px;
 }
-.imagenes .card-image img {
+.imagenes .card-image img {/*define el tamaño y le pone un radio*/
     border-radius: 8%;
     min-width: 240px;
     max-width: 240px;
 }
-
-.card-image:hover > :first-child {
+/*First-child es la imagen */
+.card-image:hover > :first-child {/*Obscurece la imagen cuando haces hover*/
     filter: brightness(60%);
 }
-.card-image:hover > * {
-    visibility: visible;
-    display: inline;
+/*alinea los botones y se desaparecen, solo aparecen cuando hacer hover*/
+.card-image:hover > * { 
+    visibility: visible;    /*permite que se vean las cosas*/
+    display: inline;        /*Las alinea */
+    
 }
 
 .button {
@@ -168,7 +172,7 @@ header nav img#pinterest-icon:hover { /*Hace mas obscuro el logo al pazar el mau
     font-weight: bold;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", ;
 }
-
+/*botpon uno up-arrow*/
 .oculto-1 {
     position: absolute;
     left: 60%;
@@ -183,7 +187,7 @@ header nav img#pinterest-icon:hover { /*Hace mas obscuro el logo al pazar el mau
     visibility: hidden;
     display: none;
 }
-
+/*boton ... */
 .oculto-2 {
     position: absolute;
     left: 78%;
@@ -198,7 +202,7 @@ header nav img#pinterest-icon:hover { /*Hace mas obscuro el logo al pazar el mau
     visibility: hidden;
     display: none;
 }
-
+/*Media Quarris*/
 @media screen and (max-width: 1699px) {
     .button {
         left: 53%;
