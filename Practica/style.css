@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+
+.top-bar {
+    background-color: #f36c21;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: rgb(255, 255, 255);
+    position: fixed; /* Hacer la barra de navegación fija */
+    font-family: "Red Hat Text", sans-serif;;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  
+}
+
+.nav-links li {
+    margin: 0 30px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+   
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    
+}
+    
+.dropdown-content a {
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.icons img {
+    width: 39px;
+    height: 39px;
+    object-fit: cover;
+}
+
+
+.main-content {
+    display: flex;
+    padding-top: 120px; /* Add space to account for the fixed header */
+}
+/*
+.intro-sectio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00aaff;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    
+}
+
+.welcome-text {
+    max-width: 50%;
+    padding: 50px;
+    
+}
+
+.welcome-text h1 {
+    font-size: 3em;
+    
+}
+
+.welcome-text p {
+    font-size: 1.2em;
+    
+    
+}
+
+.welcome-text button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #00aaff;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+
+}
+
+.hero-image{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 733px;
+}
+*/
+.intro-sectio2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00aaff;
+    padding: 50px;
+    text-align: center;
+    
+}
+
+
+.welcom-text2 h1{
+   
+    font-size: 6em;
+    padding: 20px;
+}
+.welcom-text2 h2{
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 2.0em;
+    padding: 20px;
+}
+.welcom-text2 p{
+    font-family: "Lato", sans-serif;
+    font-size: 1.25em;
+    padding: 40px;
+    
+}
+
+
+.imagenmariposa{
+    margin-top: 40px;
+    object-fit: cover;
+}
+
+
+/*************************************/
+.product-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  
+}
+
+.product-card {
+    background-color: #00aaff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 16px;
+    transition: all 0.8s ease-out;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 20px;
+    transition: border-radius 0.3s ease;
+    
+    width: 279px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.product-card:hover img {
+    border-radius: 0;
+    
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.product-info h3 {
+    font-family: "Red Hat Text", sans-serif;
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.product-info p {
+    font-family: "Red Hat Text", sans-serif;
+    margin: 0 0 10px;
+    color: #1a1a1a;
+    font-size: 20px;
+}
+
+.add-to-cart {
+    background-color:  #00aaff;
+    color: #1a1a1a;
+    border: solid #000000;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 1s ease-in-out;
+    border-radius: 50px;
+    font-size: 17px;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+    color: white;
+}
